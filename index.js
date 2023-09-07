@@ -8,6 +8,11 @@ app.use(cors());
 const news = require("./data/news.json");
 const categories = require("./data/Category.json");
 
+
+app.get("/",(req,res)=>{
+    res.send("Hello Dragon")
+})
+
 app.get('/categories', (req, res) => {
   res.send(categories)
 });
